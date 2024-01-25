@@ -1,0 +1,29 @@
+.clear_fix {*zoom:1}
+.clear_fix:after {content: ""; display: block; clear: both}
+.hidden{overflow:hidden; height:0; width:0; line-height:0; font-size:0; text-indent:-9999999px}
+#wrap {background:#17223c; width:100vw; height:100vh; position: relative;}
+.top_area {position: relative;}
+.top_area .logo_top {font-size:30px; font-weight:500; color:#fff; text-align:center; padding:30px 0;}
+.top_area .btn button {position: absolute; width:77px; height:45px; right:740px; top:25px; background-color:none;}
+.top_area .btn button.on {background:url(../media/onbtn.gif) no-repeat;}
+.top_area .btn button.off {background:url(../media/offbtn.gif) no-repeat;}
+
+.contents {padding:20px;}
+.box {position: relative; padding:25px 20px 20px; border-radius:5px; border:2px solid #4b5366;  box-sizing:border-box}
+.box > div {overflow:auto}
+.b01 > div {height:450px;}
+.b02 > div {height:250px;}
+.b03 > div {height:250px;}
+.box h4 {text-align:center; margin-top:-20px; font-size:20px; color:#c3eeff; position:absolute; top:10px; width:100%;}
+.box h4 span {padding:0 20px; background-color:#17223c;}
+.box table {width:99.5%;}
+.box table thead th {background:#0c73dd; color:#fff; font-size:18px; padding:13px 0; vertical-align:middle}
+.box table tbody td {border:1px solid #c5c5c5; background-color:#fff; padding:10px; text-align: center; font-size:17px; color:#000; box-sizing: border-box; vertical-align:middle}
+.box table tbody th {border:1px solid #766897; background:#3c2c61; padding:10px; text-align:center; font-size:18px; color:#fff; box-sizing: border-box; font-weight:400; vertical-align:middle}
+.box table thead th:first-child {border-right:1px solid #c5c5c5;}
+.b02 {margin-top:30px; float:left; width:49%;}
+.b03 {margin-top:30px; float:right; width:49%;}
+.box.b02 table tbody td ,.box.b03 table tbody td {background-color:#a495c7;}
+.box.b02 table, .box.b03 table {height:274px;}
+
+

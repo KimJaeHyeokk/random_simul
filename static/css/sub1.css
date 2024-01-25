@@ -1,0 +1,110 @@
+.clear_fix {*zoom:1}
+.clear_fix:after {content: ""; display: block; clear: both}
+.hidden{overflow:hidden; height:0; width:0; line-height:0; font-size:0; text-indent:-9999999px}
+
+/* 메인페이지 */
+.wrapage {background:#313248; height:1080px;}
+
+.top_area {height:61px; background:#24253b; box-shadow:2px 2px 2px rgb(0, 0, 0, 20%); position: relative;}
+.top_area .home a {display:block; position: absolute; right:10px; top:9px;}
+
+.contents {padding:14px;}
+.contents > div {background:#24253b}
+.contents .box0101 {background:url(../media/mvdc_bg.gif) no-repeat center #24253b; height:990px; box-sizing: border-box; position: relative;}
+.contents .box0101 > div {position:absolute;}
+.contents .box0101 > div h4 {font-size:22px; font-weight:600; color:#fff; margin:0 0 20px 10px;}
+.contents .box0101 > div > div {background:#2f304a; padding:30px; box-sizing: border-box; position: relative; display:inline-block;}
+.contents .box0101 > div > div li {font-size:20px; font-weight:100; color:#fff; margin-bottom:20px; position: relative; width:390px;}
+.contents .box0101 > div > div li:last-child {margin-bottom:0;}
+.contents .box0101 > div > div li .t01 {position:absolute; right:0; top:0;}
+.contents .box0101 > div > div li .num {font-size:22px; font-weight:500;}
+
+.contents .box0101 .twobox::after {content:''; display:block; width:1px; height:315px; position:absolute; left:50%; top:25px; background:#5c5d7a;}
+.contents .box0101 .twobox li {width:190px;}
+.contents .box0101 .twobox ul {float:left;}
+.contents .box0101 .twobox ul:last-child {margin-left:60px;}
+.contents .box0101 .wrp03 h4, .contents .box0101 .wrp04 h4, .contents .box0101 .wrp05 h4 {text-align: right; margin:0 10px 20px 0;}
+
+.contents .wrp01 {top:30px; left:20px;}
+.contents .wrp02 {bottom:20px; left:20px;}
+.contents .wrp03 {top:30px; right:20px;}
+.contents .wrp04 {top:275px; right:20px;}
+.contents .wrp05 {bottom:20px; right:20px;}
+.contents .wrp01 div::before {content:''; display:block; background:url(../media/mvdcmain01.png) no-repeat; width:52px; height:52px; position:absolute; right:-26px; top:33px;}
+.contents .wrp02 div::before {content:''; display:block; background:url(../media/mvdcmain01.png) no-repeat; width:52px; height:52px; position:absolute; right:135px; top:-25px;}
+.contents .wrp03 div::before {content:''; display:block; background:url(../media/mvdcmain01.png) no-repeat; width:52px; height:52px; position:absolute; left:-26px; top:33px;}
+.contents .wrp04 div::before {content:''; display:block; background:url(../media/mvdcmain01.png) no-repeat; width:52px; height:52px; position:absolute; left:-26px; top:80px;}
+.contents .wrp05 div::before {content:''; display:block; background:url(../media/mvdcmain01.png) no-repeat; width:52px; height:52px; position:absolute; left:-26px; top:155px;}
+
+.contents .box02 {height:990px; box-sizing: border-box; position: relative; padding:0 12px;}
+.contents .box02 > ul > li {float:left; width:33.3%;}
+.contents .box02 > ul > li > div {width:597px; height:420px; background:#2f304a; margin:0 auto; box-sizing: border-box; padding:10px;}
+.contents .box02 > ul > li h4 {font-size:18px; font-weight:500; color:#fff; margin:25px 0 19px 20px;}
+.contents .box02 .graph {border:1px solid #f00; height:100%;}
+
+.contents .box03 {height:1052px; box-sizing: border-box; position:relative}
+.contents .box0301 h4 {font-size:27px; font-weight:500; color:#fff; margin:30px 0 15px 20px;}
+.contents .box0302 h4 {font-size:20px; font-weight:500; color:#fff; margin:10px 0 5px 10px; border-bottom:2px solid #8c8d9b; padding-bottom:20px; width:415px;}
+.contents .box0301 {width:1400px; float:left;}
+.contents .box0302 {background:#2f304a; float:left; margin:20px 0 0 15px; width:460px; height:1015px; padding:10px 10px 0; box-sizing: border-box;}
+.contents .box0301 > ul > li > div {background:#2f304a; padding:0 15px; box-sizing: border-box; width:445px; height:446px; margin-left:15px;}
+.contents .box0302 > ul > li > div {box-sizing: border-box; margin:0 10px 20px;}
+.contents .box0301 > ul > li {float:left; width:33.3%;}
+.contents .box0301 > ul > li > div > ul > li {font-size:22px; font-weight:100; color:#fff; border-bottom:1px solid #53546e; padding:20px 0}
+.contents .box0302 > ul > li > div > ul > li {font-size:18px; font-weight:100; color:#fff; border-bottom:1px solid #53546e; padding:17px 5px}
+.contents .box0301 > ul > li > div > ul > li:last-child, .contents .box0302 > ul > li > div > ul > li:last-child {border-bottom:0;}
+.contents .box0301 li.on, .contents .box0302 li.on {background:url(../media/mvdc_sta01.png) no-repeat right 5px center;} 
+.contents .box0301 li.off, .contents .box0302 li.off {background:url(../media/mvdc_sta02.png) no-repeat right 5px center;} 
+.contents .box0302 li.on, .contents .box0302 li.off {background-size:25px;}
+
+.contents .box0301 .lsy02 li {position: relative;}
+.contents .box0301 .lsy02 li .txt02 {position:absolute; left:345px; top:20px; font-size:18px;}
+.contents .box0301 .lsy02 li .txt02 .num {font-weight:400; margin-right:5px; color:#fffb8a; font-size:22px;}
+
+.contents .box04 {height:1052px; box-sizing: border-box; position:relative; padding:0 10px;}
+.contents .box04 h4 {font-size:27px; font-weight:500; color:#fff; padding:25px 0 15px 20px;}
+.contents .box04 > ul > li {float:left; width:33.3%;}
+.contents .box04 > ul > li > div {background:#2f304a; padding:10px; box-sizing: border-box; width:597px; height:442px; margin:0 auto; position: relative;}
+.contents .box04 .weabox .t01 {font-size:28px; font-weight:100; color:#e7e7e7; position: absolute; left:80px; top:230px}
+.contents .box04 .weabox .t02 {font-size:32px; font-weight:300; color:#fff; position: absolute; right:90px; top:35px}
+.contents .box04 .weabox .t03 {font-size:106px; font-weight:400; color:#fffc1d; position: absolute; right:40px; top:95px; background:url(../media/c.png) no-repeat right top 10px; padding-right:50px;}
+.contents .box04 .weabox .t04 {font-size:28px; font-weight:400; color:#e7e7e7; position: absolute; right:100px; top:230px}
+.contents .box04 .weabox .t04 .cool {color:#49ecff}
+.contents .box04 .weabox .t04 .hot {color:#ff815a}
+.contents .box04 .wea01 {background:url(../media/wea01.png) no-repeat 35px 15px #2f304a;}
+.contents .box04 .wea02 {background:url(../media/wea02.png) no-repeat 35px 15px #2f304a;}
+.contents .box04 .wea03 {background:url(../media/wea03.png) no-repeat 35px 15px #2f304a;}
+.contents .box04 .wea04 {background:url(../media/wea04.png) no-repeat 35px 15px #2f304a;}
+.contents .box04 .stable {margin-top:290px; border-radius:5px; overflow:hidden;}
+.contents .box04 .stable table {width:100%;}
+.contents .box04 .stable table td {font-size:23px; font-weight:300; color:#fff; padding:21px 15px 21px 60px; box-sizing: border-box;}
+.contents .box04 .stable table td span {text-align:right; display:inline-block; width:70%;}
+.contents .box04 .stable table td.w1 {background:url(../media/wea_icon01.png) no-repeat 15px center #24253b; border-bottom:1px solid #6e6e6e; border-right:1px solid #6e6e6e;}
+.contents .box04 .stable table td.w2 {background:url(../media/wea_icon02.png) no-repeat 15px center #24253b; border-bottom:1px solid #6e6e6e}
+.contents .box04 .stable table td.w3 {background:url(../media/wea_icon03.png) no-repeat 15px center #24253b; border-right:1px solid #6e6e6e}
+.contents .box04 .stable table td.w4 {background:url(../media/wea_icon04.png) no-repeat 15px center #24253b;}
+.contents .box04 > ul > li > div .graph {border:1px solid #f00; height:100%;}
+.contents .box04 .databox {background:#2f304a; box-sizing: border-box; width:1832px; height:445px; margin:0 auto; padding:15px 8px;}
+.contents .box04 .databox > ul > li {float:left; width:25%;}
+.contents .box04 .databox > ul > li > div {width:436px; margin:0 auto;}
+.contents .box04 .databox > ul > li > div > ul {padding:0 10px; margin-top:12px;}
+.contents .box04 .databox > ul > li > div > ul > li {font-size:24px; font-weight:300; color:#fff; position: relative; line-height:190%;}
+.contents .box04 .databox > ul > li > div > ul > li .txt {position: absolute; right:10px; top:0}
+.contents .box04 .databox > ul > li > div > ul > li .num {font-size:26px; font-weight:500; color:#fff600;}
+
+.contents .conwrp {height:990px; position: relative; box-sizing: border-box; padding:70px 20px 20px 20px;}
+.contents .conwrp .his_titbtn a {border-radius:5px 0 5px 0; padding:10px; color:#fff; font-size:20px; font-weight:500; color:#fff; background:#35364e; display:inline-block; position:absolute; top:20px;}
+.contents .conwrp .his_titbtn a:hover, .contents .conwrp .on .his_titbtn a {background:#4d456a}
+.contents .conwrp .his01 .his_titbtn a {left:20px;}
+.contents .conwrp .his02 .his_titbtn a {left:205px;}
+
+.contents .conwrp .lstbox {border-radius:5px; background:#4d456a; height:100px; box-sizing: border-box; padding:10px 15px; overflow:auto;}
+.contents .conwrp .lstbox li label {font-size:16px; color:#fff;}
+.contents .conwrp .lstbox li {float:left; width:20%; vertical-align: middle; padding:5px 0;}
+.contents .conwrp .lstbox li input {vertical-align:baseline; margin-right:5px;}
+.contents .conwrp .lstbox::-webkit-scrollbar { width: 5px; height:7px; /*스크롤바의 너비*/} 
+.contents .conwrp .lstbox::-webkit-scrollbar-thumb { background-color: #726997; /*스크롤바의 색상*/ border-radius:0 5px 5px 0; }
+.contents .conwrp .lstbox::-webkit-scrollbar-track { display: none; /*스크롤바 트랙 색상*/ }
+.contents .conwrp .his_lst_box .graph {border:1px solid #f00; height:790px; margin-top:10px;}
+
+

@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="author">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport"
+        content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,target-densitydpi=medium-dpi">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/sub.css' %}">
+    <script src="{% static 'dashboard.js'%}"></script>
+    <title></title>
+</head>
+<body>
+    <div id="wrap" class="jeonnam">
+        <!-- Mainheader -->
+        <header id="mainheader" class="fixed">
+            <div class="headerwrap">
+                <div class="top_area">
+                    <h1 class="logo_top">MVDC Simulator</h1>
+                    <p class="btn"><button class="on"></button></p><!-- off시 class="off" -->
+                </div>
+            </div>
+        </header>
+        <!-- //Mainheader -->
+        <hr>
+        <!-- contents -->        
+        <div class="contents clear_fix">
+            <div class="box b01">
+                <h4><span>DNP3.0 Protocol Side</span></h4>
+                <div>
+                    <table>
+                        <colgroup>
+                            <col width="45%">
+                            <col width="5%">
+                            <col width="45%">
+                            <col width="5%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th colspan="2" scope="col">Binary input</th>
+                                <th colspan="2" scope="col">Analog Input</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>DG Grid Side CB181 Status (Close : 1, Open : 0)</td>
+                                <td>{{result.0.val}}</td>
+                                <td>S1 Transformer Primary side three phase AC currents (Iac) Ia</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>DG Grid Side CB191 Status (Close : 1, Open : 0)</td>
+                                <td>{{result.1.val}}</td>
+                                <td>S1 Transformer Primary side three phase AC currents (Iac) Ib</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 Transformer 1'st CB101 Status (Close : 1, Open : 0)</td>
+                                <td>{{result.2.val}}</td>
+                                <td>S1 Transformer Primary side three phase AC currents (Iac) Ic</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 Transformer 1'st ES101 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC currents (Iac) In</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 Transformer 1'st CB102 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC voltages (Vac) Va</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 Transformer 1'st ES102 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC voltages (Vac) Vb</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 DC Up Link DS111 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC voltages (Vac) Vc</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 DC Up Link ES111 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC voltages (Vac) Va-b</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 DC Up Link ES112 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC voltages (Vac) Vb-c</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 DC Dn Link DS121 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Primary side three phase AC voltages (Vac) Vc-a</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 DC Dn Link ES121 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Secondary side three phase AC currents (Iac) Ia</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Station 1 DC Dn Link ES122 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Secondary side three phase AC currents (Iac) Ib</td>
+                                <td>00</td>
+                            </tr>
+                            <tr>
+                                <td>Kepco Side CB281 Status (Close : 1, Open : 0)</td>
+                                <td>00</td>
+                                <td>S1 Transformer Secondary side three phase AC currents (Iac) Ic</td>
+                                <td>00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="clear_fix">
+                <div class="box b02">
+                    <h4><span>Modbus Protocol Side</span></h4>
+                    <div>
+                        <table>
+                            <colgroup>
+                                <col width="18%">
+                                <col width="7%">
+                                <col width="18%">
+                                <col width="7%">
+                                <col width="18%">
+                                <col width="7%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="2" scope="col">A Point</th>
+                                    <th colspan="2" scope="col">B Point</th>
+                                    <th colspan="2" scope="col">C Point</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>Power factor</th>
+                                    <td>00</td>
+                                    <th>Power factor</th>
+                                    <td>00</td>
+                                    <th>Power factor</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>DC Power</th>
+                                    <td>00</td>
+                                    <th>DC Power</th>
+                                    <td>00</td>
+                                    <th>DC Power</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>Day Peak</th>
+                                    <td>00</td>
+                                    <th>Day Peak</th>
+                                    <td>00</td>
+                                    <th>Day Peak</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>Month Peak</th>
+                                    <td>00</td>
+                                    <th>Month Peak</th>
+                                    <td>00</td>
+                                    <th>Month Peak</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>Total Peak</th>
+                                    <td>00</td>
+                                    <th>Total Peak</th>
+                                    <td>00</td>
+                                    <th>Total Peak</th>
+                                    <td>00</td>
+                                </tr>
+                            </tbody>                           
+                        </table>
+                    </div>
+                </div>
+
+                <div class="box b03">
+                    <h4><span>OneM2M Protocol Side</span></h4>
+                    <div>
+                        <table>
+                            <colgroup>
+                                <col width="22%">
+                                <col width="7%">
+                                <col width="22%">
+                                <col width="7%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th colspan="4" scope="col">환경데이터</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>미세먼지(PM10)</th>
+                                    <td id="a"></td>
+                                    <th>미세먼지(PM2.5)</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>풍속</th>
+                                    <td>00</td>
+                                    <th>풍향</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>대기온도</th>
+                                    <td>00</td>
+                                    <th>대기습도</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>대기압</th>
+                                    <td>00</td>
+                                    <th>강우량</th>
+                                    <td>00</td>
+                                </tr>
+                            
+                            <thead>
+                                <tr>
+                                    <th colspan="2" scope="col">열화상데이터(α Point)</th>
+                                    <th colspan="2" scope="col">열화상데이터(β Point)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>최대온도</th>
+                                    <td>00</td>
+                                    <th>최대온도</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>최저온도</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>평균온도</th>
+                                    <td>00</td>
+                                    <th>평균온도</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>온도차</th>
+                                    <td>00</td>
+                                    <th>온도차</th>
+                                    <td>00</td>
+                                </tr>
+                            </tbody>
+                            
+                            <thead>
+                                <tr>
+                                    <th colspan="2" scope="col">열화상데이터(γ Point)</th>
+                                    <th colspan="2" scope="col">열화상데이터(δ Point)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th>최대온도</th>
+                                    <td>00</td>
+                                    <th>최대온도</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>평균온도</th>
+                                    <td>00</td>
+                                    <th>평균온도</th>
+                                    <td>00</td>
+                                </tr>
+                                <tr>
+                                    <th>온도차</th>
+                                    <td>00</td>
+                                    <th>온도차</th>
+                                    <td>00</td>
+                                </tr>
+                            </tbody>                                   
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
